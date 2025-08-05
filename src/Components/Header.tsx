@@ -23,7 +23,7 @@ return (
              <Image
                 src="/headerLogo.svg"
                 alt="Haus of Carmen Logo"
-                width={50} 
+                width={60} 
                 height={50}
                 priority
                 />

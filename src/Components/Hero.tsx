@@ -22,15 +22,18 @@ function Hero() {
             src="/heroLogo.svg"
             alt="Haus of Carmen Logo"
             width={140} 
-            height={140}
+            height={130}
             priority
+            className="md:w-[230px] md:h-[210px] "
             />
-            {/* <h1 className=" text-white text-4xl">Haus of Carmen</h1> */}
         </div>
 
-        <button className="absolute bottom-0 translate-y-1/2 bg-pinkPrimary text-[20px] text-black font-bold px-6 py-1 rounded-full transition-all ease-in-out hover:bg-pinkDark">
+        {/* <a href="https://www.instagram.com/hausofcarmen/" target="_blank" rel="noopener noreferrer" className="absolute bottom-0 translate-y-1/2  ">
+          <button className=" bg-pinkPrimary text-[20px] text-black px-6 py-1 font-bold rounded-full transition-all ease-in-out hover:bg-pinkDark">
             Conócenos
-        </button>
+          </button>
+        </a> */}
+        
       </section>
       
     </>
