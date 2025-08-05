@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-pinkPrimary: #f471ff;
+  --color-pinkSecondary:#F3A5FF ;
+  --color-pinkTertiary: #F6D6FB;
+  --color-pinkDark: #c63ce0;
+  
+  --color-blackPrimary: #1b1b1b;
+
+  /* --color-graySecondary: #8B949E;
+  --color-grayTertiary: #6a7282;
+  --color-bluePrimary: #4BA5FF;
+  --color-blueSecondary: #bedbff;
+  --color-blueTitle: #2686E6;
+  --color-blueTertiary: #0B223A;
+  --color-blackPrimary: #0D1117;
+  --color-card: #161f29; */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1f1f1f;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
