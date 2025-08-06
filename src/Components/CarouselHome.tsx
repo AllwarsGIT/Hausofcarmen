@@ -1,36 +1,18 @@
 "use client";
+
 import React, { useRef } from "react";
 import CarouselHomeCard from "@/Components/CarouselHomeCard";
-import Slider from "react-slick";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
+import type { Swiper as SwiperClass } from "swiper";
+
+import "swiper/css";
+import "swiper/css/navigation";
+
 function CarouselHome() {
-  const sliderRef = useRef<Slider>(null);
-
-  const settings = {
-    autoplay: true,
-    autoplaySpeed: 4000,
-    dots: false,
-    infinite: true,
-    arrows: false, // Desactivamos las flechas internas
-    speed: 1200,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    draggable: false,
-    centerPadding: "20px",
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 768, settings: { slidesToShow: 1.1 } },
-    ],
-  };
-
-  const goNext = () => {
-    sliderRef.current?.slickNext();
-  };
-
-  const goPrev = () => {
-    sliderRef.current?.slickPrev();
-  };
+  const swiperRef = useRef<SwiperClass | null>(null);
 
   const cards = [
     {
@@ -58,41 +40,49 @@ function CarouselHome() {
       image: "/Shows/Sueño de primavera.jpg",
       description: "Colores, luz y música en perfecta armonía.",
     },
-    // {
-    //   title: "Espectáculo 6",
-    //   image: "https://picsum.photos/id/1045/400/200",
-    //   description: "Colores, luz y música en perfecta armonía.",
-    // },
   ];
 
   return (
-    <div className="w-[340px] md:w-[700px] lg:w-[900px] xl:w-[1100px] max-w-6xl mx-auto px-4 mt-10  ">
+    <div className="w-[340px] md:w-[700px] lg:w-[900px] xl:w-[1100px] max-w-6xl mx-auto px-4 mt-10">
       {/* Flechas externas */}
       <div className="flex flex-row w-full justify-start items-center gap-2 px-10 mb-4">
         <IoIosArrowBack
           size={35}
           className="text-pinkSecondary cursor-pointer transition-all ease-in-out hover:text-pinkTertiary"
-          onClick={goPrev}
+          onClick={() => swiperRef.current?.slidePrev()}
         />
         <IoIosArrowForward
           size={35}
           className="text-pinkSecondary cursor-pointer transition-all ease-in-out hover:text-pinkTertiary"
-          onClick={goNext}
+          onClick={() => swiperRef.current?.slideNext()}
         />
       </div>
 
-      {/* Slider con ref */}
-      <Slider ref={sliderRef} {...settings}>
+      {/* Swiper */}
+      <Swiper
+        modules={[Navigation, Autoplay]}
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        speed={1200}
+        slidesPerView={4}
+        spaceBetween={16} 
+        breakpoints={{
+          0: { slidesPerView: 1.1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 4 },
+        }}
+        loop={true}
+      >
         {cards.map((card, index) => (
-          <div key={index} className="px-2">
+          <SwiperSlide key={index}>
             <CarouselHomeCard
               title={card.title}
               imageUrl={card.image}
               description={card.description}
             />
-          </div>
+          </SwiperSlide>
         ))}
-      </Slider>
+      </Swiper>
     </div>
   );
 }

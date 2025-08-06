@@ -13,7 +13,7 @@ function CarouselHomeCard({
 }: CarouselHomeCardProps) {
   return (
     
-    <div className="w-full max-w-[340px] text-white bg-black rounded-xl shadow-md overflow-hidden opacity-70 flex-shrink-0 transition-all ease-in-out hover:selection:shadow-lg hover:opacity-100 z-10">
+    <div className="w-full max-w-[340px] text-white bg-black rounded-xl shadow-md overflow-hidden lg:opacity-70 flex-shrink-0 transition-all ease-in-out hover:selection:shadow-lg  hover:opacity-100 z-10">
       <div className="relative aspect-[3/4]">
         <Image
           src={imageUrl}
