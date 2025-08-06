@@ -8,16 +8,19 @@ function CarouselHome() {
   const sliderRef = useRef<Slider>(null);
 
   const settings = {
+    autoplay: true,
+    autoplaySpeed: 3000,
     dots: false,
     infinite: true,
     arrows: false, // Desactivamos las flechas internas
-    speed: 400,
+    speed: 1000,
     slidesToShow: 4,
     slidesToScroll: 1,
     draggable: false,
+    centerPadding: "20px",
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 640, settings: { slidesToShow: 1 } },
+      { breakpoint: 768, settings: { slidesToShow: 1.1 } },
     ],
   };
 
@@ -63,7 +66,7 @@ function CarouselHome() {
   ];
 
   return (
-    <div className="w-[340px] md:w-[700px] lg:w-[900px] xl:w-[1100px] max-w-6xl mx-auto px-4 mt-10 ">
+    <div className="w-[340px] md:w-[700px] lg:w-[900px] xl:w-[1100px] max-w-6xl mx-auto px-4 mt-10  ">
       {/* Flechas externas */}
       <div className="flex flex-row w-full justify-start items-center gap-2 px-10 mb-4">
         <IoIosArrowBack
