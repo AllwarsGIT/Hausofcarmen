@@ -28,9 +28,17 @@ return (
                 priority
                 />
 
+            <div className="hidden lg:flex items-center justify-between px-5 w-full">
+                <ul className="flex items-center gap-6 text-pinkSecondary font-bold">
+                    <li className="hover:text-pinkTertiary transition-all ease-in-out cursor-pointer">Nuestras dragas</li>
+                    <li className="hover:text-pinkTertiary transition-all ease-in-out cursor-pointer">Espectáculos</li>
+                </ul>
+            </div>
+            
+
             <FiMenu 
                 size={35} 
-                className="text-pinkSecondary cursor-pointer transition-all ease-in-out hover:text-pinkTertiary " 
+                className="lg:hidden text-pinkSecondary cursor-pointer transition-all ease-in-out hover:text-pinkTertiary " 
                 onClick={() => setIsOpen(!isOpen)}
                 />
 

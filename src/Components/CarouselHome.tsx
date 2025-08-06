@@ -9,11 +9,11 @@ function CarouselHome() {
 
   const settings = {
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
     dots: false,
     infinite: true,
     arrows: false, // Desactivamos las flechas internas
-    speed: 1000,
+    speed: 1200,
     slidesToShow: 4,
     slidesToScroll: 1,
     draggable: false,
