@@ -61,6 +61,7 @@ function CarouselHome() {
       {/* Swiper */}
       <Swiper
         modules={[Navigation, Autoplay]}
+        
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         speed={1200}
@@ -74,7 +75,8 @@ function CarouselHome() {
         loop={true}
       >
         {cards.map((card, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide 
+          key={index}>
             <CarouselHomeCard
               title={card.title}
               imageUrl={card.image}

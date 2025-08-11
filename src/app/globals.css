@@ -20,14 +20,7 @@
   
   --color-blackPrimary: #1b1b1b;
 
-  /* --color-graySecondary: #8B949E;
-  --color-grayTertiary: #6a7282;
-  --color-bluePrimary: #4BA5FF;
-  --color-blueSecondary: #bedbff;
-  --color-blueTitle: #2686E6;
-  --color-blueTertiary: #0B223A;
-  --color-blackPrimary: #0D1117;
-  --color-card: #161f29; */
+  
 }
 
 @media (prefers-color-scheme: dark) {
