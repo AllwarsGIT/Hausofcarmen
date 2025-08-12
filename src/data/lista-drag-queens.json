@@ -1,12 +1,15 @@
 [
     {
-        "id": "Jade Twerk",
-        "name": "Jade Twerk",
-        "href": "drag/jadetwerk"
+        "id": "Test",
+        "name": "Test",
+        "href": "/drag/Test",
+        "image": [],
+        "description": "Lorem ipsum ",
+        "socials": ""
     },
     {
-        "id": "Némesis",
+        "id": "Nemesis",
         "name": "Némesis",
-        "href": "drag/nemesis"
+        "href": "/drag/Nemesis"
     }
 ]

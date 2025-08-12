@@ -7,10 +7,10 @@ import Image from 'next/image';
 import DropdownHeader from '@/Components/Header/DropdownHeader';
 import dragsData from "@/data/lista-drag-queens.json"; 
 import showsData from "@/data/lista-espectáculos.json"; 
-import Test from "@/Components/Header/Test"
+import Link from 'next/link';
 
-const drags = dragsData as { name: string; href:string;}[];
-const shows = showsData as { name: string; href:string;}[];
+const drags = dragsData as { name: string; href:string; id:string;}[];
+const shows = showsData as { name: string; href:string; id:string;}[];
 
 function Header() {
     
@@ -24,19 +24,24 @@ function Header() {
 return (
 
 
-    <header className="bg-blackPrimary fixed top-0 px-10 left-0 w-full flex z-50">
+    <header className="bg-black fixed top-0 px-10 left-0 w-full flex z-50">
 
         <nav className="flex items-center justify-between w-full h-16">
-             <Image
-                src="/headerLogo.svg"
-                alt="Haus of Carmen Logo"
-                width={60} 
-                height={50}
-                priority
-                />
+            <Link
+                href="/">
+                <Image
+                    className="hover:scale-110 transition-all ease-in-out"
+                    src="/headerLogo.svg"
+                    alt="Haus of Carmen Logo"
+                    width={60} 
+                    height={50}
+                    priority
+                    />
+            </Link>
+             
 
-            <div className="hidden lg:flex items-center justify-between px-5 w-full">
-                <ul className="flex items-center gap-6 text-pinkSecondary font-bold">
+            <div className="hidden lg:flex items-center justify-between px-2 w-full">
+                <ul className="flex items-center text-pinkSecondary font-bold">
                     <DropdownHeader title="Nuestras Dragas" items={drags} />
                     <DropdownHeader title="Espectáculos" items={shows} />
                 </ul>

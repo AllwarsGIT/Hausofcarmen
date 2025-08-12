@@ -1,3 +1,4 @@
+import DonationSection from "@/Components/DonationSection";
 import Hero from "@/Components/Hero";
 import ShowsHome from "@/Components/ShowsHome";
 
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <Hero />
       <ShowsHome />
+      <DonationSection />
     </>
   );
 }

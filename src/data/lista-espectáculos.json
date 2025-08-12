@@ -2,11 +2,11 @@
     {
         "id": "Drag to the future",
         "name": "Drag to the future",
-        "href": "show/dragtothefuture"
+        "href": "/show/dragtothefuture"
     },
     {
         "id": "Drag Valentín",
         "name": "Drag Valentín",
-        "href": "show/dragvalentin"
+        "href": "/show/dragvalentin"
     }
 ]

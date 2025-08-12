@@ -28,11 +28,11 @@ function Hero() {
             />
         </div>
 
-        {/* <a href="https://www.instagram.com/hausofcarmen/" target="_blank" rel="noopener noreferrer" className="absolute bottom-0 translate-y-1/2  ">
-          <button className=" bg-pinkPrimary text-[20px] text-black px-6 py-1 font-bold rounded-full transition-all ease-in-out hover:bg-pinkDark">
+        <a href="https://www.instagram.com/hausofcarmen/" target="_blank" rel="noopener noreferrer" className="absolute bottom-0 translate-y-1/2  ">
+          <button className=" bg-pinkPrimary text-[20px] text-black px-6 py-1 font-bold rounded-full transition-all ease-in-out hover:bg-pinkTertiary hover:scale-110">
             Conócenos
           </button>
-        </a> */}
+        </a>
         
       </section>
       

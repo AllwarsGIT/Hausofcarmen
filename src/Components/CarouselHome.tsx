@@ -43,7 +43,7 @@ function CarouselHome() {
   ];
 
   return (
-    <div className="w-[340px] md:w-[700px] lg:w-[900px] xl:w-[1100px] max-w-6xl mx-auto px-4 mt-10">
+    <div className="w-[340px] md:w-[700px] lg:w-[1100px] xl:w-[1800px] max-w-7xl mx-auto px-4 mt-10">
       {/* Flechas externas */}
       <div className="flex flex-row w-full justify-start items-center gap-2 px-10 mb-4">
         <IoIosArrowBack
