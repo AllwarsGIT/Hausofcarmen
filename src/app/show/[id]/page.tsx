@@ -1,21 +1,15 @@
 import React from 'react'
-// import Image from 'next/image'
 import ShowHero from './ShowHero';
 import showsData from '@/data/lista-espectáculos.json'
 
-
-
-
-function page({ params }: { params: { id: string } }) {
-
-    const show =showsData.find((d) => d.id === params.id);
-
+export default async function page({ params }: { params: { id: string } }) {
+    const { id } = await params;
+    const show = showsData.find((d) => d.id === id);
+    
     return (
         <>
             <ShowHero/>
-            <h1>{show ? show.name : "Drag queen not found"}</h1>
+            <h1>{show ? show.name : "Show not found"}</h1>
         </>
     )
 }
-
-export default page
