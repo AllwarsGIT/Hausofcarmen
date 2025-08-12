@@ -2,9 +2,14 @@ import React from 'react'
 import ShowHero from './ShowHero';
 import showsData from '@/data/lista-espectáculos.json'
 
-export default function page(props: { params: { id: string } }) {
-    const show = showsData.find((d) => d.id === props.params.id);
-    
+interface Props {
+  params: { id: string }
+  searchParams?: { [key: string]: string | string[] | undefined }
+}
+
+export default function Page({ params }: Props) {
+    const show = showsData.find((d) => d.id === params.id);
+   
     return (
         <>
             <ShowHero/>

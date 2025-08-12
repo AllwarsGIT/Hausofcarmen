@@ -2,9 +2,13 @@ import React from 'react'
 import DragHero from './DragHero';
 import dragsData from '@/data/lista-espectáculos.json'
 
-export default function page(props: { params: { id: string } }) {
-    const drag = dragsData.find((d) => d.id === props.params.id);
-    
+interface Props {
+  params: { id: string }
+}
+
+export default function Page({ params }: Props) {
+    const drag = dragsData.find((d) => d.id === params.id);
+   
     return (
         <>
             <DragHero/>
