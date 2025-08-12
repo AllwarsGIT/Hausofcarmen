@@ -4,13 +4,9 @@ import dragsData from '@/data/lista-drag-queens.json'
 import DragHero from './DragHero';
 
 
-type PageProps = {
-    params: {
-        id:string;
-    };
-};
 
-function page({params}: PageProps) {
+
+function page({ params }: { params: { id: string } }) {
 
     const drag = dragsData.find((d) => d.id === params.id);
 
