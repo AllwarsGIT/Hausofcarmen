@@ -4,13 +4,9 @@ import ShowHero from './ShowHero';
 import showsData from '@/data/lista-espectáculos.json'
 
 
-type PageProps = {
-    params: {
-        id:string;
-    };
-};
 
-function page({params}: PageProps) {
+
+function page({ params }: { params: { id: string } }) {
 
     const show =showsData.find((d) => d.id === params.id);
 
