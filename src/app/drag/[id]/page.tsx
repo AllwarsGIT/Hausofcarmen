@@ -1,21 +1,14 @@
 import React from 'react'
-// import Image from 'next/image'
-import dragsData from '@/data/lista-drag-queens.json'
 import DragHero from './DragHero';
+import dragsData from '@/data/lista-espectáculos.json'
 
-
-
-
-function page({ params }: { params: { id: string } }) {
-
-    const drag = dragsData.find((d) => d.id === params.id);
-
+export default function page(props: { params: { id: string } }) {
+    const drag = dragsData.find((d) => d.id === props.params.id);
+    
     return (
         <>
             <DragHero/>
-            <h1>{drag ? drag.name : "Drag queen not found"}</h1>
+            <h1>{drag ? drag.name : "Show not found"}</h1>
         </>
     )
 }
-
-export default page

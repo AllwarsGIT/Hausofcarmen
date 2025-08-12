@@ -2,9 +2,8 @@ import React from 'react'
 import ShowHero from './ShowHero';
 import showsData from '@/data/lista-espectáculos.json'
 
-export default async function page({ params }: { params: { id: string } }) {
-    const { id } = await params;
-    const show = showsData.find((d) => d.id === id);
+export default function page(props: { params: { id: string } }) {
+    const show = showsData.find((d) => d.id === props.params.id);
     
     return (
         <>
