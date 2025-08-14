@@ -1,6 +1,6 @@
 import React from 'react';
 import DragHero from './DragHero';
-import dragsData from '@/data/lista-espectáculos.json';
+import dragsData from '@/data/lista-espectaculos.json';
 
 interface Props {
   params: Promise<{ id: string }>;

@@ -6,7 +6,7 @@ import { RxCross1 } from "react-icons/rx";
 import Image from 'next/image';
 import DropdownHeader from '@/Components/Header/DropdownHeader';
 import dragsData from "@/data/lista-drag-queens.json"; 
-import showsData from "@/data/lista-espectáculos.json"; 
+import showsData from "@/data/lista-espectaculos.json"; 
 import Link from 'next/link';
 
 const drags = dragsData as { name: string; href:string; id:string;}[];

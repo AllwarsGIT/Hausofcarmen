@@ -4,7 +4,7 @@ import { FaPaypal } from "react-icons/fa";
 
 function DonationSection() {
   return (
-    <section className="flex flex-col w-full justify-center items-center gap-15 my-20">
+    <section className="flex flex-col bg-blackPrimary w-full justify-center items-center gap-15 py-20">
         <h1 className="text-2xl font-bold text-center text-pinkSecondary">
             ¿Te gusta lo que ves? ¡Apóyanos!
         </h1>
