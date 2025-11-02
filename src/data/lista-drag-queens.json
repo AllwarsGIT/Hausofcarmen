@@ -1,15 +1,101 @@
 [
     {
-        "id": "Test",
-        "name": "Test",
-        "href": "/drag/Test",
-        "image": [],
+        "id": "billiegunz",
+        "name": "Billie Gunz",
+        "href": "/drag/billiegunz",
+        "imageFolder": ["/drags/mancadesalamanca/" ],
+        "image": [
+            "manca1.jpeg"
+        ],
         "description": "Lorem ipsum ",
         "socials": ""
     },
     {
-        "id": "Nemesis",
-        "name": "Némesis",
-        "href": "/drag/Nemesis"
+        "id": "elsalsero",
+        "name": "El Salsero",
+        "href": "/drag/elsalsero",
+        "imageFolder": ["/drags/mancadesalamanca/" ],
+        "image": [
+            "manca1.jpeg"
+        ],
+        "description": "Lorem ipsum ",
+        "socials": ""
+    },
+    {
+        "id": "unamuna",
+        "name": "Una muna",
+        "href": "/drag/unamuna",
+        "imageFolder": ["/drags/mancadesalamanca/" ],
+        "image": [
+            "manca1.jpeg"
+        ],
+        "description": "Lorem ipsum ",
+        "socials": ""
+    },
+    {
+        "id": "nemesis",
+        "name": "Nemesis",
+        "href": "/drag/nemesis",
+        "imageFolder": ["/drags/mancadesalamanca/" ],
+        "image": [
+            "manca1.jpeg"
+        ],
+        "description": "Lorem ipsum ",
+        "socials": ""
+    },
+    {
+        "id": "ariabarroca",
+        "name": "Aria Barroca",
+        "href": "/drag/ariabarroca",
+        "imageFolder": ["/drags/mancadesalamanca/" ],
+        "image": [
+            "manca1.jpeg"
+        ],
+        "description": "Lorem ipsum ",
+        "socials": ""
+    },
+    {
+        "id": "mancadesalamanca",
+        "name": "Manca de Salamanca",
+        "href": "/drag/mancadesalamanca",
+        "imageFolder": ["/drags/mancadesalamanca/" ],
+        "image": [
+            "manca1.jpeg"
+        ],
+        "description": "Lorem ipsum ",
+        "socials": ""
+    },
+    {
+        "id": "jadetwerk",
+        "name": "Jade Twerk",
+        "href": "/drag/jadetwerk",
+        "imageFolder": ["/drags/mancadesalamanca/" ],
+        "image": [
+            "manca1.jpeg"
+        ],
+        "description": "Lorem ipsum ",
+        "socials": ""
+    },
+    {
+        "id": "militisignotis",
+        "name": "Militis Ignotis",
+        "href": "/drag/militisignotis",
+        "imageFolder": ["/drags/mancadesalamanca/" ],
+        "image": [
+            "manca1.jpeg"
+        ],
+        "description": "Lorem ipsum ",
+        "socials": ""
+    },
+    {
+        "id": "azurite",
+        "name": "Azurite",
+        "href": "/drag/azurite",
+        "imageFolder": ["/drags/mancadesalamanca/" ],
+        "image": [
+            "manca1.jpeg"
+        ],
+        "description": "Lorem ipsum ",
+        "socials": ""
     }
 ]

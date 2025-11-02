@@ -8,8 +8,8 @@ function ShowsHome() {
   
   return (
     <section className="flex flex-col w-full items-center justify-center min-h-[60vh] bg-blackPrimary">
-        <div className="flex flex-row mt-15 w-full justify-center ">
-            <h1 className="text-pinkSecondary text-2xl font-bold ">ESPECTÁCULOS</h1>
+        <div className="flex flex-row mt-15 w-full justify-center  ">
+            <h1 className="text-pinkSecondary text-4xl font-bold ">Espectáculos</h1>
         </div>
 
         <CarouselHome />

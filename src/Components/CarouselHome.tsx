@@ -28,7 +28,7 @@ function CarouselHome() {
     {
       title: "Espectáculo 3",
       image: "/Shows/Drag Valentin.jpeg",
-      description: "Acrobacias que te dejarán sin aliento.",
+      description: "Acrobacias que te dejarán sin aliento.", 
     },
     {
       title: "Espectáculo 4",
@@ -68,7 +68,7 @@ function CarouselHome() {
         slidesPerView={4}
         spaceBetween={16} 
         breakpoints={{
-          0: { slidesPerView: 1.1 },
+          0: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 4 },
         }}

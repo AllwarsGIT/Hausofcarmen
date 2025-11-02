@@ -24,6 +24,8 @@ function DonationSection() {
             <FaPaypal size={30} className="text-white" />
             <span className="text-white font-semibold text-lg">Donar con PayPal</span>
         </a>
+
+        
         
     </section>
     )

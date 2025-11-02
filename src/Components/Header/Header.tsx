@@ -6,11 +6,9 @@ import { RxCross1 } from "react-icons/rx";
 import Image from 'next/image';
 import DropdownHeader from '@/Components/Header/DropdownHeader';
 import dragsData from "@/data/lista-drag-queens.json"; 
-import showsData from "@/data/lista-espectaculos.json"; 
 import Link from 'next/link';
 
 const drags = dragsData as { name: string; href:string; id:string;}[];
-const shows = showsData as { name: string; href:string; id:string;}[];
 
 function Header() {
     
@@ -19,6 +17,14 @@ function Header() {
     // Estado del menú principal
 
     const [isOpen, setIsOpen] = useState(false);
+
+    //datos dropdown shows
+
+    const showsItems = [
+        { name: 'Shows Teatrales', href: '/shows/teatrales' },
+        { name: 'Bares y Discotecas', href: '/shows/bares' },
+        { name: 'Festivales y Ferias', href: '/shows/festivales' }
+    ];
 
 
 return (
@@ -43,7 +49,13 @@ return (
             <div className="hidden lg:flex items-center justify-between px-2 w-full">
                 <ul className="flex items-center text-pinkSecondary font-bold">
                     <DropdownHeader title="Nuestras Dragas" items={drags} />
-                    <DropdownHeader title="Espectáculos" items={shows} />
+                    <DropdownHeader title="Espectáculos" items={showsItems} />
+                    <Link
+                        href="/"
+                        className="block px-2 py-2 hover:text-pinkTertiary transition-all ease-in-out "
+                        >
+                        
+                    </Link>
                 </ul>
             </div>
             
@@ -72,7 +84,7 @@ return (
                         <RxCross1 size={35} onClick={() => setIsOpen(false)} className="text-pinkSecondary cursor-pointer transition-all ease-in-out hover:text-pinkTertiary"/>
                     </li>
                     <DropdownHeader title="Nuestras Dragas" items={drags} />
-                    <DropdownHeader title="Espectáculos" items={shows} />
+                    <DropdownHeader title="Espectáculos" items={showsItems} />
                 </ul>
                 
                 
